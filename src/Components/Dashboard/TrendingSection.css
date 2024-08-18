@@ -1,0 +1,61 @@
+.trending-section {
+  margin-top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    justify-content: center;
+  }
+  
+  
+  .trending-analysis, .trending-news {
+    margin-left: 5px;
+    width: 45%;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .trending-analysis h2, .trending-news h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .trending-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .trending-item img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .trending-item p {
+    margin: 0;
+  }
+  
+  .trending-news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .trending-news-item span {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .more-link {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  

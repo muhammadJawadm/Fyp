@@ -1,0 +1,75 @@
+/* Sidebar styles */
+.sidebar {
+    width: 240px; /* Default to collapsed width */
+    background-color: #0451b0;
+    color: #fff;
+    transition: width 0.3s ease-in-out; /* Smooth transition for width */
+    position: fixed;
+    height: 100%;
+    overflow: hidden; /* Hide content that overflows */
+  }
+  
+  .sidebar:hover {
+    width: 240px; /* Expand on hover */
+  }
+  
+  .sidebar-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .sidebar-logo img {
+    height: 20px;
+  }
+  
+  .nav-toggle .btn-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .nav-item a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .nav-item a:hover {
+    background: #3a4a5a;
+  }
+  
+  .nav-item a i {
+    margin-right: 20px;
+  }
+  
+  .nav-item a p,
+  .text-section {
+    opacity: 0; /* Hide text content when collapsed */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .sidebar:hover .nav-item a p,
+  .sidebar:hover .text-section {
+    opacity: 1; /* Show text content on hover */
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .nav-item .sub-item {
+    padding-left: 20px;
+  }
+  
+  .sidebar-wrapper {
+    height: calc(100% - 80px); /* Adjust height for the fixed sidebar */
+    overflow-y: auto;
+  }
+  

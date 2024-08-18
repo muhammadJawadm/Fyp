@@ -1,0 +1,28 @@
+.MarginSetting {
+    margin: 0 auto;
+    max-width: 900px;
+    margin-top: 45%;
+  }
+  
+  .table-sales {
+    width: 100%;
+  }
+  
+  .flag {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flag img {
+    margin-right: 10px;
+  }
+  
+  .card-body .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card-body .col-md-6 {
+    flex: 1 1 50%;
+  }
+  

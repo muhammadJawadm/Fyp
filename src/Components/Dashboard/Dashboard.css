@@ -1,0 +1,56 @@
+/* Reset some basic elements */
+html, body, .wrapper, .main-panel {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 500vh; /* Full viewport height */
+}
+
+.sidebar {
+  width: 250px; /* Adjust based on your sidebar width */
+  background-color: #2c3e50; /* Example color */
+  height: 500vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-panel {
+  margin-left: 250px; /* Same as sidebar width */
+  width: calc(100% - 250px);
+  overflow: visible;
+  
+}
+
+.navbar, .footer {
+  width: 100%;
+  background-color: #34495e; /* Example color */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.main-dashboard {
+  padding: 20px;
+}
+
+.map, .map2 {
+  padding: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+.Gap{
+  margin-top: 650px;
+} 
