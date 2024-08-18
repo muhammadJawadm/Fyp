@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logoLight from '../../assets/img/kaiadmin/logo_light.svg';
 import jmDenis from '../../assets/img/jm_denis.jpg';
 import chadEngle from '../../assets/img/chadengle.jpg';
 import mLane from '../../assets/img/mlane.jpg';
@@ -75,7 +74,7 @@ const Navbar = () => {
         <div className="logo-header" data-background-color="dark">
           <a href="index.html" className="logo">
             <img
-              src={logoLight}
+              src=""
               alt="navbar brand"
               className="navbar-brand"
               height="20"

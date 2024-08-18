@@ -1,12 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faSyncAlt, faTimes } from '@fortawesome/free-solid-svg-icons';
-import idFlag from '../../assets/img/flags/id.png';
-import usFlag from '../../assets/img/flags/us.png';
-import auFlag from '../../assets/img/flags/au.png';
-import ruFlag from '../../assets/img/flags/ru.png';
-import cnFlag from '../../assets/img/flags/cn.png';
-import brFlag from '../../assets/img/flags/br.png';
 import './Map.css'
 
 

@@ -72,11 +72,11 @@ const StockAnalysis = () => {
   };
 
   return (
-    <div className="col-xl-9 stretch-card grid-margin card">
-      <div className="d-flex flex-wrap">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
+    <div className="col-xl-9 stretch-card grid-margin"style={{margin:'15px',}}>
+      <div className='card'>
+      <div className="d-flex flex-wrap justify-content-between" style={{padding:'20px'}}>
+          <div className="row" >
+            <div className="col-12" >
               <h2>AAPL AI-Powered Stock Analysis</h2>
               <ul className="nav nav-tabs mt-3">
                 <li className={`ml-4 btn-primary btn-round btn-border ${activeTab === 'aiScore' ? 'active' : ''}`}>
@@ -111,7 +111,8 @@ const StockAnalysis = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+
   );
 };
 

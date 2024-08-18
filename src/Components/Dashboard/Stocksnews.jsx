@@ -22,7 +22,7 @@ const Stocksnews = () => {
   }, []);
 
   return (
-    <div className="Card card-round">
+    <div className="Card card-round col-md-3">
       <div className="trending-analysis">
         <h2>Trending Analysis</h2>
         {trendingNewsData.map((item, index) => (

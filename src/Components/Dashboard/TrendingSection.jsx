@@ -14,8 +14,8 @@ const TrendingSection = () => {
   }, []);
 
   return (
-    <div className="trending-section">
-      <div className="trending-news">
+    <div className="trending-section col-xl-9 stretch-card" style={{margin:"30px"}}>
+      <div className="trending-news card ">
         <h2>Trending News Articles</h2>
         {trendingNews.map((item) => (
           <div className="trending-news-item" key={item.id}>

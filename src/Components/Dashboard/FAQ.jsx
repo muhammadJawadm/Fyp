@@ -47,8 +47,8 @@ const FAQComponent = () => {
   };
 
   return (
-    <div className="col-xl-9 stretch-card grid-margin card  ">
-    <div style={{ width: '80%', margin: '0 auto' }}>
+    <div className="col-xl-9 stretch-card grid-margin card  " style={{margin:'45px',}}>
+    <div className='justify-content-between' style={{ width: '85%', margin: '0 auto' }}>
       <h3 style={{fontSize:'24px'}}>AAPL Frequently Asked Questions</h3>
       {faqs.map((faq, index) => (
         <div key={index} style={{ borderBottom: '1px solid #ddd', padding: '10px 0', fontSize:'18px' }}>
