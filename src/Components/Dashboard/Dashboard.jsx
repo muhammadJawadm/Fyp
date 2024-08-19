@@ -13,6 +13,7 @@ import TrendingSection from './TrendingSection';
 import CommunityCollaboration from './CommunityCollaboration';
 import Stocksnews from './Stocksnews';
 import Feed from './Feed';
+import StockComments from './StockComments';
 
 function Dashboard() {
 
@@ -29,8 +30,10 @@ return(
 <StockAnalysis></StockAnalysis>
 <Stocksnews></Stocksnews>
 </div>
+<div className='d-flex'>
 <FAQComponent/>
-
+<StockComments></StockComments>
+</div>
 {/* <CommunityCollaboration></CommunityCollaboration> */}
 <TrendingSection/>
 

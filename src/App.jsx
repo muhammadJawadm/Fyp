@@ -13,6 +13,7 @@ import Stocksnews from './Components/Dashboard/Stocksnews';
 import Feed from './Components/Dashboard/Feed';
 import NewsList from './Components/Dashboard/Newslist';
 import UploadNews from './Components/Dashboard/UploadNews.jsx';
+import Userprofile from './Components/Dashboard/Userprofile.jsx';
 
 const router = createBrowserRouter([
     {
@@ -46,8 +47,11 @@ const router = createBrowserRouter([
     {
         path:'/UploadNews',
         element: <div><UploadNews></UploadNews></div>
+    },
+    {
+        path:'/Userprofile',
+        element: <div><Userprofile></Userprofile></div>
     }
-
     
 ])
 

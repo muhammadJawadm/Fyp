@@ -6,6 +6,7 @@ import talha from '../../assets/img/talha.jpg';
 import profile from '../../assets/img/profile.jpg';
 import profile2 from '../../assets/img/profile2.jpg';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const handleLogout = async () => {
@@ -69,7 +70,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="main-header">
+    <div className="main-header ">
       <div className="main-header-logo">
         <div className="logo-header" data-background-color="dark">
           <a href="index.html" className="logo">
@@ -77,7 +78,7 @@ const Navbar = () => {
               src=""
               alt="navbar brand"
               className="navbar-brand"
-              height="20"
+              height="10"
             />
           </a>
           <div className="nav-toggle">
@@ -377,7 +378,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li className="nav-item dropdown hidden-caret">
+            <li className=" dropdown hidden-caret">
               <a
                 className="dropdown-toggle profile-pic"
                 href="#"
@@ -404,14 +405,14 @@ const Navbar = () => {
                     <div className="u-text">
                       <h4>{username}</h4>
                       <p className="text-muted">hello@example.com</p>
-                      <a href="profile.html" className="btn btn-xs btn-secondary btn-sm">
+                      <Link to="/Userprofile" className="btn btn-xs  btn-sm">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div className="dropdown-divider"></div>
+                  <div className="dropdown-divider color-white"></div>
                   <a className="dropdown-item" href="#">
                     My Profile
                   </a>
