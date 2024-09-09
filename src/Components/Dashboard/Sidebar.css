@@ -9,9 +9,7 @@
     overflow: hidden; /* Hide content that overflows */
   }
   
-  .sidebar:hover {
-    width: 240px; /* Expand on hover */
-  }
+
   
   .sidebar-logo {
     display: flex;
@@ -40,24 +38,7 @@
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   }
   
-  .nav-item a:hover {
-    background: #3a4a5a;
-  }
   
-  .nav-item a i {
-    margin-right: 20px;
-  }
-  
-  .nav-item a p,
-  .text-section {
-    opacity: 0; /* Hide text content when collapsed */
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .sidebar:hover .nav-item a p,
-  .sidebar:hover .text-section {
-    opacity: 1; /* Show text content on hover */
-  }
   
   .sidebar-content {
     padding: 20px;

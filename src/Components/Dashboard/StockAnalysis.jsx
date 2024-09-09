@@ -14,7 +14,7 @@ const StockAnalysis = () => {
         return (
           <div>
             <div className="row mt-4">
-              <div className="col-md-11">
+              <div className="col-md-11" style={{padding:"30px"}}>
                 <div className='d-flex'>
                   <p>
                     Apple (AAPL) has an <strong>AI Score of 9/10 (Buy)</strong> because, according to an <strong>overall analysis</strong>, it has a <strong>probability advantage of +6.13% of beating the market (S&P500) in the next 3 months</strong>. This advantage is calculated as the <strong>difference between the average probability of all US-listed stocks (33.81%)</strong> and the <strong>probability of AAPL (39.94%)</strong> of outperforming the market in the next 3 months, as determined by Danelfin AI's comprehensive analysis.
@@ -72,10 +72,12 @@ const StockAnalysis = () => {
   };
 
   return (
-    <div className="col-xl-9 stretch-card grid-margin"style={{margin:'15px',}}>
-      <div className='card'>
-      <div className="d-flex flex-wrap justify-content-between" style={{padding:'20px'}}>
-          <div className="row" >
+    
+    <div className="col-xl-9 stretch-card grid-margin"style={{marginLeft:'50px',}}>
+      <div className="row stock_container" >
+      <div className='card card-body'>
+      <div className="d-flex flex-wrap justify-content-between" style={{padding:'40px'}}>
+          
             <div className="col-12" >
               <h2>AAPL AI-Powered Stock Analysis</h2>
               <ul className="nav nav-tabs mt-3">

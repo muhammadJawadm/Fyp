@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import jmDenis from '../../assets/img/jm_denis.jpg';
 import chadEngle from '../../assets/img/chadengle.jpg';
-import mLane from '../../assets/img/mlane.jpg';
 import talha from '../../assets/img/talha.jpg';
 import profile from '../../assets/img/profile.jpg';
 import profile2 from '../../assets/img/profile2.jpg';
@@ -30,6 +29,7 @@ const Navbar = () => {
   });
 
   const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
 
   useEffect(() => {
     const fetchUserDetails = async () => {
@@ -50,6 +50,7 @@ const Navbar = () => {
         console.log('User details response:', response.data);
         if (response.data && response.data.username) {
           setUsername(response.data.username);
+          setEmail(response.data.email)
         } else {
           console.warn('Username not found in response:', response.data);
         }
@@ -181,18 +182,7 @@ const Navbar = () => {
                           <span className="time">12 minutes ago</span>
                         </div>
                       </a>
-                      <a href="#">
-                        <div className="notif-img">
-                          <img src={mLane} alt="Img Profile" />
-                        </div>
-                        <div className="notif-content">
-                          <span className="subject">Jhon Doe</span>
-                          <span className="block">
-                            Ready for the meeting today...
-                          </span>
-                          <span className="time">12 minutes ago</span>
-                        </div>
-                      </a>
+                     
                       <a href="#">
                         <div className="notif-img">
                           <img src={talha} alt="Img Profile" />
@@ -404,7 +394,7 @@ const Navbar = () => {
                     </div>
                     <div className="u-text">
                       <h4>{username}</h4>
-                      <p className="text-muted">hello@example.com</p>
+                      <p className="muted_text">{email}</p>
                       <Link to="/Userprofile" className="btn btn-xs  btn-sm">
                         View Profile
                       </Link>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Axios from 'axios';
-import './Login.css';
+
 
 const Login = () => {
     const [loginusername, setLoginusername] = useState('');
@@ -30,7 +30,7 @@ const Login = () => {
     };
 
     return (
-        <div className="container-scroller">
+        <div className="container-scroller ">
             <div className="container-fluid page-body-wrapper full-page-wrapper">
                 <div className="content-wrapper d-flex align-items-center auth px-0">
                     <div className="row w-100 mx-0">
@@ -44,7 +44,7 @@ const Login = () => {
                                 {error && (
                                     <div className="alert alert-danger" role="alert">{error}</div>
                                 )}
-                                <form className="pt-3" onSubmit={handleLogin}>
+                                <form className="pt-3 flex-row" onSubmit={handleLogin}>
                                     <div className="form-group">
                                         <input
                                             type="text"
